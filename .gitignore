@@ -6,13 +6,32 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Build
+dist/
+dist-ssr/
+build/
+
+# Local files
 *.local
 
-# Editor directories and files
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# ZIP archives
+*.zip
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +41,17 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Test and coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Caches
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.temp/
+.docusaurus/
+.vuepress/dist/
